@@ -1,8 +1,12 @@
 
 public class RomanNumeral {
 
-	public Object arabicToRoman(int arabicNumber) {
-		return "1";
-	}
+	int arabicNumber;
 
+	public Object arabicToRoman(int arabicNumber) {
+		if (arabicNumber == 1) {
+			return "I";
+		}
+		return "II";
+	}
 }

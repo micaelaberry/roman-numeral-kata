@@ -7,7 +7,14 @@ public class RomanNumeralTest {
 	@Test
 	public void shouldReturnRomanOneWhenArabicOneIsPassed(){
 	RomanNumeral romanNumeral = new RomanNumeral();
-	assertEquals("I", "1", romanNumeral.arabicToRoman(1));
+	assertEquals("1","I", romanNumeral.arabicToRoman(1));
+	
+	}
+	
+	@Test
+	public void shouldReturnRomanTwoWhenArabicTwoIsPassed(){
+	RomanNumeral romanNumeral = new RomanNumeral();
+	assertEquals("2","II", romanNumeral.arabicToRoman(2));
 	
 	}
 
