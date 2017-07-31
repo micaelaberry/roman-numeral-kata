@@ -4,7 +4,7 @@ import org.junit.Test;
 
 public class RomanNumeralTest {
 	
-	@Test
+/*	@Test
 	public void shouldReturnRomanOneWhenArabicOneIsPassed(){
 	RomanNumeral romanNumeral = new RomanNumeral();
 	assertEquals("1","I", romanNumeral.arabicToRoman(1));
@@ -16,6 +16,16 @@ public class RomanNumeralTest {
 	RomanNumeral romanNumeral = new RomanNumeral();
 	assertEquals("2","II", romanNumeral.arabicToRoman(2));
 	
+	}*/
+	
+	@Test
+	public void shouldReturnRomanNumbersOneTwoThreeWhenArabicNumbersArePassed(){
+		RomanNumeral romanNumeral = new RomanNumeral();
+		assertEquals("1","I", romanNumeral.arabicToRoman(1));
+		assertEquals("2","II", romanNumeral.arabicToRoman(2));
+		assertEquals("3","III", romanNumeral.arabicToRoman(3));
+
+		
 	}
 
 }
