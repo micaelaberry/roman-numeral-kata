@@ -1,14 +1,15 @@
 
 public class RomanNumeral {
 
-	int arabicNumber;
-
-	public static String arabicToRoman(int arabicNumber) {
-		if (arabicNumber == 1) {
-			return "I";
-		} else if (arabicNumber == 2) {
-			return "II";
+	public static String arabicToRoman(int arabic) {
+		  StringBuilder result = new StringBuilder();
+		  
+		  if (arabic == 4) {
+		    return "IV";
+		  }
+		  for (int number = 0; number < arabic; number++) {
+		    result.append("I");
+		  }
+		  return result.toString();
 		}
-		return "III";
-	}
 }

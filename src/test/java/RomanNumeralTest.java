@@ -1,31 +1,27 @@
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class RomanNumeralTest {
 	
-/*	@Test
-	public void shouldReturnRomanOneWhenArabicOneIsPassed(){
-	RomanNumeral romanNumeral = new RomanNumeral();
-	assertEquals("1","I", romanNumeral.arabicToRoman(1));
-	
+	RomanNumeral romanNumeral;
+
+	@Before
+	public void setUp() {
+		romanNumeral = new RomanNumeral();
 	}
 	
-	@Test
-	public void shouldReturnRomanTwoWhenArabicTwoIsPassed(){
-	RomanNumeral romanNumeral = new RomanNumeral();
-	assertEquals("2","II", romanNumeral.arabicToRoman(2));
-	
-	}*/
 	
 	@Test
 	public void shouldReturnRomanNumbersOneTwoThreeWhenArabicNumbersArePassed(){
-		RomanNumeral romanNumeral = new RomanNumeral();
-		assertEquals("1","I", romanNumeral.arabicToRoman(1));
-		assertEquals("2","II", romanNumeral.arabicToRoman(2));
-		assertEquals("3","III", romanNumeral.arabicToRoman(3));
-
-		
+		assertEquals("1","I", RomanNumeral.arabicToRoman(1));
+		assertEquals("2","II", RomanNumeral.arabicToRoman(2));
+		assertEquals("3","III", RomanNumeral.arabicToRoman(3));
 	}
-
+	
+	@Test
+	public void shouldReturnRomanFourWhenArabicFourIsPassed(){
+		assertEquals("4", "IV", RomanNumeral.arabicToRoman(4));
+	}
 }
