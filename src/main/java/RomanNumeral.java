@@ -3,7 +3,11 @@ public class RomanNumeral {
 
 	public static String arabicToRoman(int arabic) {
 		  StringBuilder result = new StringBuilder();
-		  if (arabic ==5){
+		  if (arabic == 6){
+			  return "VI";
+		  }
+		  
+		  else if (arabic == 5){
 			  return "V";
 		  }
 		  else if (arabic == 4) {

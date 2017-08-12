@@ -29,4 +29,9 @@ public class RomanNumeralTest {
 	public void shouldReturnRomanNumberFiveWhenArabicFiveIsPassed(){
 		assertEquals("5", "V", RomanNumeral.arabicToRoman(5));
 	}
+	
+	@Test
+	public void shouldReturnRomanNumberSixWhenArabicSixIsPassed(){
+		assertEquals("6", "VI", RomanNumeral.arabicToRoman(6));
+	}
 }
